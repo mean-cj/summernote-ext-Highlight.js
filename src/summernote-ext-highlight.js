@@ -32,7 +32,7 @@
     var createCodeNode = function (code, select) {
         var $code = $('<code>');
         $code.html(code);
-        $code.addClass('language-' + select);
+        $code.addClass('language-' + select).addClass(select);
 
         var $pre = $('<pre>');
         $pre.html($code)
